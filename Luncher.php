@@ -1,5 +1,5 @@
 <?php
-define('BOT_TOKEN', '241425599:AAGmqGz8o3rcNZ96rSZ6SUyNLtPRQvymrr4');
+define('BOT_TOKEN', 'توکن ربات را قرار دهید');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -115,7 +115,7 @@ function processMessage($message) {
   // process incoming message
   $boolean = file_get_contents('booleans.txt');
   $booleans= explode("\n",$boolean);
-  $admin = 139946685;
+  $admin = ایدی عددی خود را بذارید;
   $message_id = $message['message_id'];
   $rpto = $message['reply_to_message']['forward_from']['id'];
   $chat_id = $message['chat']['id'];
